@@ -13,6 +13,7 @@ local default_header = {
         [[    \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
     },
     opts = {
+        position = "center",
         hl = "Type",
         shrink_margin = false,
         -- wrap = "overflow";
@@ -177,7 +178,7 @@ local section = {
         type = "group",
         val = {
             { type = "padding", val = 1 },
-            { type = "text", val = "MRU", opts = { hl = "SpecialComment" } },
+            { type = "text", val = "MRU", opts = { position = "center", hl = "SpecialComment" } },
             { type = "padding", val = 1 },
             {
                 type = "group",
@@ -191,7 +192,7 @@ local section = {
         type = "group",
         val = {
             { type = "padding", val = 1 },
-            { type = "text", val = mru_title, opts = { hl = "SpecialComment", shrink_margin = false } },
+            { type = "text", val = mru_title, opts = { position = "center", hl = "SpecialComment", shrink_margin = false } },
             { type = "padding", val = 1 },
             {
                 type = "group",
